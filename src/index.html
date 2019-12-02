@@ -5,10 +5,52 @@
     <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Questrial|Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
+
+<div id="homePage">
+    <div class="header" id="pokeHeader">
+        <h2>Pokemon Go</h2>
+    </div>
+    <div id="upperBar" class="barraSup">
+        <nav class="barraNav">
+          <button id="pokeHomeBtn" class="pokeHomeStyle">HOME</button>
+          <button id="pokeTypesBtn" class="pokeTypesStyle">Tipo</button>
+          <button id="pokeWeakBtn" class="pokeWeakStyle">Debilidades</button>
+          <button id="pokeAboutBtn" class="pokeAboutStyle">Pokemon Go</button>
+
+            <label for="categories">Ordenar por:</label>
+            <select name="specie" id="pokeTypes">
+                <option value="plant">Tipo</option>
+                <option value="water">Agua</option>
+                <option value="fire">Fuego</option>
+                <option value="plant">Planta</option>
+                <option value="psychic">Psíquico</option>
+                <option value="ground">Tierra</option>
+                <option value="venom">Veneno</option>
+                <option value="flying">Volador</option>
+              </select>
+            <select name="number" id="pokeNumber">
+              <option value="mayorMenor">Mayor a menor</option>
+              <option value="menorMayor">Menor a mayor</option>
+            </select>
+            <select name="names" id="pokeNames">
+              <option value="aToZ">A-Z</option>
+              <option value="zToA">Z-A</option>
+            </select>
+            <label for="searching">Buscar</label><input type="searchBar">
+
+        </nav>
+    </div>
+</div>    
+
+<!--Barra superior-->
+
+</div>
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
