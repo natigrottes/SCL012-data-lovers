@@ -11,18 +11,28 @@
   <body>
     <div id="root"></div>
 
-<div id="homePage">
-    <div class="header" id="pokeHeader">
-        <h2>Pokemon Go</h2>
-    </div>
-    <div id="upperBar" class="barraSup">
-        <nav class="barraNav">
-          <button id="pokeHomeBtn" class="pokeHomeStyle">HOME</button>
-          <button id="pokeTypesBtn" class="pokeTypesStyle">Tipo</button>
-          <button id="pokeWeakBtn" class="pokeWeakStyle">Debilidades</button>
-          <button id="pokeAboutBtn" class="pokeAboutStyle">Pokemon Go</button>
+<div id="pokeHeader" class="header" >
+      <a href="https://fontmeme.com/pokemon-go-font/"><img src="https://fontmeme.com/permalink/191204/14f02719d469a2ffd2bef789f2a013fc.png" id="datamonGoStyle" alt="pokemon-go-font" width="450" height="100"></a>
+  </div>
+  <div id="upperBar" class="barraSup">
+    <nav class="barraNav">
+      <button id="pokeHomeBtn" class="pokeHomeStyle">HOME</button>
+      <button id="pokeTypesBtn" class="pokeTypesStyle">Tipo</button>
+      <button id="pokeWeakBtn" class="pokeWeakStyle">Debilidades</button>
+      <button id="pokeAboutBtn" class="pokeAboutStyle">Pokémon Go</button>
+    </nav>
+</div>
 
-            <label for="categories">Ordenar por:</label>
+<div id="homePage">
+<div id="pokemonImageUp" class="pokeImageDiv">
+  <img id=pokePicFirst class="pokeImageFirstStyle" src="images/allPokemons.jpg" alt="allPokemons" width="900" height="300">
+<button id="elegirPokeBtn" class="pokeElegir">¿Cuál Pokemon vas a elegir?</button>
+</div>
+</div> 
+
+<div id="secondPage">
+
+  <label for="categories">Ordenar por:</label>
             <select name="specie" id="pokeTypes">
                 <option value="plant">Tipo</option>
                 <option value="water">Agua</option>
@@ -42,14 +52,14 @@
               <option value="zToA">Z-A</option>
             </select>
             <label for="searching">Buscar</label><input type="searchBar">
+         <div id="allPokemons">
 
-        </nav>
-    </div>
-</div>    
+         </div>   
 
-<!--Barra superior-->
 
 </div>
+
+<!--Barra superior-->
 
     <script type="module" src="main.js"></script>
   </body>

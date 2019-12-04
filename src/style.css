@@ -1,17 +1,22 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   background-image: url(images/fondoTrama.jpg);
   font-family: 'Lato', sans-serif;
 
 }
   
-  .header {
-    width: 1920px;
-    height: 120px;
+  #pokeHeader {
+    display: flex;
+    justify-content: center;
+    width: 1330px;
+    height: 110px;
     padding: 10px 16px;
-    background: linear-gradient(90deg, rgba(72, 255, 231, 0.73) 0%, rgba(83, 223, 157, 0.9) 100%);
+    background: linear-gradient(90deg, rgba(72, 255, 231, 0.609) 0%, rgba(83, 223, 158, 0.719) 100%);
     mix-blend-mode: normal;
-    color: #f1f1f1;
   }
   
   .content {
@@ -31,11 +36,12 @@ body {
   .pokeHomeStyle {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 116px;
+    width: 125px;
     height: 47px;
     left: 0px;
     top: 274px;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
     background: #FFCC03;
   }
@@ -43,11 +49,12 @@ body {
   .pokeTypesStyle {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 116px;
+    width: 125px;
     height: 47px;
     left: 0px;
     top: 274px;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
     background: #FFCC03;
   }
@@ -55,11 +62,12 @@ body {
   .pokeWeakStyle {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 116px;
+    width: 125px;
     height: 47px;
     left: 0px;
     top: 274px;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
     background: #FFCC03;
   }
@@ -67,20 +75,55 @@ body {
   .pokeAboutStyle {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 116px;
+    width: 125px;
     height: 47px;
     left: 0px;
     top: 274px;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
     background: #FFCC03;
   }
 
   #upperBar {
     display: flex;
-
-
+    justify-content: center;
 
   }
 
-  div: borde, alto, ancho
+  #pokemonImageUp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 230px;
+  }
+
+  .pokeImageFirstStyle {
+    border-style: solid;
+    border-color: rgba(72, 255, 231, 0.609)
+
+  }
+
+  .pokeElegir {     
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 906px;
+  height: 47px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FFCC03;
+
+}
+
+#homePage {
+  display: block;
+}
+
+#secondPage {
+  display: none;
+}
+
+
+  /*div: borde, alto, ancho
