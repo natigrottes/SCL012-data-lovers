@@ -85,6 +85,18 @@ body {
     background: #FFCC03;
   }
 
+  .pokeSearchStyle {
+    display: flex;
+    float: right;
+    padding: 6px;
+    background: #FFFFFF;
+    border: 2px solid #FFCC03;
+    border-radius: 60px;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+
+
   #upperBar {
     display: flex;
     justify-content: center;
@@ -113,7 +125,7 @@ body {
   font-size: 22px;
   text-align: center;
   color: #FFFFFF;
-  background: #FFCC03;
+  background: linear-gradient(90deg, rgba(72, 255, 231, 0.609) 0%, rgba(83, 223, 158, 0.719) 100%);
 
 }
 

@@ -1,17 +1,24 @@
-
-
 import POKEMON from './data/pokemon/pokemon.js'
 
-console.log(POKEMON);
+import {pokemonByType} from './data.js'
+console.log(pokemonByType(POKEMON, 'Fire'));
 
-console.log(POKEMON[3].name) //muestra nombres según posicion
+import {pokemonByName} from './data.js'
+console.log(pokemonByName(POKEMON, 'Charmander'));
 
-console.log(POKEMON[3].type) //muestra los tipos de pokemon segun posicion
+//console.log(POKEMON);
 
-console.log(POKEMON.length) //muestra los 151 pokemon
+//console.log(POKEMON[3].name) //muestra nombres según posicion
 
-const pokemonByType = POKEMON.filter(POKEMON => POKEMON.type);
-console.log(pokemonByType);
+//console.log(POKEMON[0].type) //muestra los tipos de pokemon segun posicion
+
+//console.log(POKEMON.length) //muestra los 151 pokemon
+
+//let pokemonByType = POKEMON.filter(POKEMON => POKEMON.type);
+//console.log(pokemonByType);
+
+//let pokemonNames = POKEMON.filter(POKEMON => POKEMON.name);
+//console.log(pokemonNames);
 
 //Cambiar de HOME PAGE a SECOND PAGE al hacer click en el boton de la imagen 
 document.getElementById('elegirPokeBtn').addEventListener('click', () => {
@@ -19,6 +26,14 @@ document.getElementById('elegirPokeBtn').addEventListener('click', () => {
     secondPage.style.display="block";
 });
 
-const allPokemons = document.getElementById('allPokemons');
+//volver al Home apretando HOME
+document.getElementById('pokeHomeBtn').addEventListener('click', limpiar);
 
-allPokemons.innerHTML = pokemonByType;
+function limpiar () {
+    window.location.reload();    
+}
+
+
+//const allPokemons = document.getElementById('allPokemons');
+//allPokemons.innerHTML = pokemonByType;
+
