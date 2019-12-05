@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-image: url(images/fondoTrama.jpg);
+    font-family: 'Lato', sans-serif;
+  
+  }
+  
+    .header {
+      width: 1920px;
+      height: 120px;
+      padding: 10px 16px;
+      background: linear-gradient(90deg, rgba(72, 255, 231, 0.73) 0%, rgba(83, 223, 157, 0.9) 100%);
+      mix-blend-mode: normal;
+      color: #f1f1f1;
+    }
+  
+    .content {
+      padding: 16px;
+    }
+  
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  
+    .sticky + .content {
+      padding-top: 102px;
+    }
+  
+    .pokeHomeStyle {
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 116px;
+      height: 47px;
+      left: 0px;
+      top: 274px;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      background: #FFCC03;
+    }
+  
+    .pokeTypesStyle {
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 116px;
+      height: 47px;
+      left: 0px;
+      top: 274px;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      background: #FFCC03;
+    }
+  
+    .pokeWeakStyle {
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 116px;
+      height: 47px;
+      left: 0px;
+      top: 274px;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      background: #FFCC03;
+    }
+  
+    .pokeAboutStyle {
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 116px;
+      height: 47px;
+      left: 0px;
+      top: 274px;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      background: #FFCC03;
+    }
+  
+    #upperBar {
+      display: flex;
+  
+  
+  
+    }
+  
+    /* div: borde, alto, ancho  */
