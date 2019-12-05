@@ -1,7 +1,14 @@
-/* Manejo de data */
 
-// esta es una función de ejemplo
+//filterPOKEMON(POKEMON, condition)
 
-export const example = () => {
-  return 'example';
+//sortPOKEMON(POKEMON, sortBy, sortOrder)
+
+export let pokemonByType = (POKEMON, types) => {
+  return POKEMON.filter(pokeTypes => pokeTypes.type.includes(types));
 };
+
+export let pokemonByName = (POKEMON, names) => {
+  return POKEMON.filter(pokeNames => pokeNames.name.includes(names));
+};
+
+
