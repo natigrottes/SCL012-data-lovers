@@ -4,11 +4,16 @@ import POKEMON from './data/pokemon/pokemon.js'
 document.getElementById('elegirPokeBtn').addEventListener('click', () => {
     homePage.style.display="none";
     secondPage.style.display="block";
+});
 
   for (let i = 0; i < POKEMON.length; i++) {
     // console.log(POKEMON[i].name);
-    const dataPokemon = POKEMON[i];
-    console.log(dataPokemon);
+    const namePokemon = POKEMON[i].name;
+    const imgPokemon = POKEMON[i].img;
+    const numPokemon = POKEMON[i].num;
+    // console.log(namePokemon);
+    console.log(imgPokemon);
+    // console.log(numPokemon);
 
      let card = document.createElement('div');
      card.classList.add('pokeCard');
