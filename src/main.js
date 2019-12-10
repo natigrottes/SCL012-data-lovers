@@ -41,10 +41,11 @@ for (let i = 0; i < POKEMON.length; i++) {
   createCards(POKEMON[i]);
 };
 
-// Filtrar por tipo
+// Filtrar por TIPO
 let pokeSelect = document.getElementById('select1');
 console.log(pokeSelect);
 pokeSelect.addEventListener('change', filterPokes);
+
 function filterPokes () {
   let finalFilter = pokemonByType(POKEMON, pokeSelect.value);
   document.getElementById('contentOfCards').innerHTML = "";
@@ -54,34 +55,35 @@ function filterPokes () {
   } 
 };
 
-// Ordenar por nombre
-let pokeSelect2 = document.getElementById('select1');
-console.log(pokeSelect);
-pokeSelect.addEventListener('change', filterPokes);
-function filterPokes () {
-  let finalFilter = pokemonByType(POKEMON, pokeSelect.value);
-  document.getElementById('contentOfCards').innerHTML = "";
-  for (let i = 0; i < finalFilter.length; i++){
-    createCards(finalFilter[i]);
-
-  } 
+// Ordenar por NOMBRE
+let pokeNames = document.getElementById ('select2');
+pokeNames.addEventListener ('change', showSelect2);
+function showSelect2 (){
+  let pokeValue = document.getElementById ('select2').value;
+  let finalSortName = pokemonByName(POKEMON, 'name', pokeValue);
+  document.getElementById('contentOfCards').innerHTML = '';
+  for (let i = 0; i < finalSortName.length; i++) {
+    createCards(finalSortName[i]);
+  }
 };
 
-
+// Ordenar por NOMBRE
+let pokeNumbers = document.getElementById ('select3');
+pokeNumbers.addEventListener ('change', showSelect3);
+function showSelect3 (){
+  let pokeValueNum = document.getElementById ('select3').value;
+  let finalSortNum = pokemonByName(POKEMON, 'num', pokeValueNum);
+  document.getElementById('contentOfCards').innerHTML = '';
+  for (let i = 0; i < finalSortNum.length; i++) {
+    createCards(finalSortNum[i]);
+  }
+};
 
 
 //Cambiar de HOME PAGE a SECOND PAGE al hacer click en el boton de la imagen 
 document.getElementById('elegirPokeBtn').addEventListener('click', () => {
   homePage.style.display = "none";
   secondPage.style.display = "block";
-});
-
-
-// Activar select
-  document.getElementById('filterTypeButton').addEventListener ('click', () => {
-  let dropList = document.getElementById('select').value;
-  console.log(dropList);
-
 });
 
 
@@ -92,4 +94,5 @@ document.getElementById('pokeHomeBtn').addEventListener('click', home);
 function home() {
   window.location.reload();
 };
+
 
