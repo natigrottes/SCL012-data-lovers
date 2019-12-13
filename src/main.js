@@ -67,7 +67,7 @@ function showSelect2 (){
   }
 };
 
-// Ordenar por NOMBRE
+// Ordenar por NÚMERO
 const pokeNumbers = document.getElementById ('select3');
 pokeNumbers.addEventListener ('change', showSelect3);
 function showSelect3 (){
