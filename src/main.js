@@ -1,7 +1,5 @@
 import POKEMON from './data/pokemon/pokemon.js'
 
-// import *  as modulo from 'data.js'; 
-
 // Importar funcion POKEMON BY TYPE de data
 import { pokemonByType } from './data.js';
 
@@ -81,6 +79,12 @@ function showSelect3 (){
 
 //Cambiar de HOME PAGE a SECOND PAGE al hacer click en el boton de la imagen 
 document.getElementById('elegirPokeBtn').addEventListener('click', () => {
+  homePage.style.display = 'none';
+  secondPage.style.display = 'block';
+});
+
+//Cambiar de HOME PAGE a SECOND PAGE al hacer click en la imagen 
+document.getElementById('pokePic1').addEventListener('click', () => {
   homePage.style.display = 'none';
   secondPage.style.display = 'block';
 });
