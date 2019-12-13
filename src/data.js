@@ -5,7 +5,7 @@ export const pokemonByType = (POKEMON, types) => {
 
 // Ordenar por NOMBRE y NÚMERO
 export const pokemonByName = (POKEMON, sortBy, sortOrder) => {
-  let compare = POKEMON.sort((a,b) => {
+   compare = POKEMON.sort((a,b) => {
     return a[sortBy].localeCompare(b[sortBy]);
   });
 

@@ -1,9 +1,11 @@
 import POKEMON from './data/pokemon/pokemon.js'
 
+// import *  as modulo from 'data.js'; 
+
 // Importar funcion POKEMON BY TYPE de data
 import { pokemonByType } from './data.js';
 
-// Importar funcion POKEMON BY TYPE de data
+// Importar funcion POKEMON BY NAME de data
 import { pokemonByName } from './data.js';
 
 // Variable del div donde se muestran las cartas
@@ -47,7 +49,7 @@ pokeSelect.addEventListener('change', filterPokes);
 
 function filterPokes () {
   const finalFilter = pokemonByType(POKEMON, pokeSelect.value);
-  document.getElementById('contentOfCards').innerHTML = "";
+  document.getElementById('contentOfCards').innerHTML = '';
   for (let i = 0; i < finalFilter.length; i++){
     createCards(finalFilter[i]);
   } 
@@ -79,12 +81,12 @@ function showSelect3 (){
 
 //Cambiar de HOME PAGE a SECOND PAGE al hacer click en el boton de la imagen 
 document.getElementById('elegirPokeBtn').addEventListener('click', () => {
-  homePage.style.display = "none";
-  secondPage.style.display = "block";
+  homePage.style.display = 'none';
+  secondPage.style.display = 'block';
 });
 
 // // volver al Home apretando HOME
-document.getElementById('pokeHomeBtn').addEventListener('click', home);
+document.getElementById('pokeHomeBtn2').addEventListener('click', home);
 function home() {
   window.location.reload();
 };
