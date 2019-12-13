@@ -271,14 +271,12 @@ body {
     display: flex;
     justify-content:center;
     flex-direction:row;
-    width: 1920px;
     height: 100px;
     margin-top: 40px;
     background: linear-gradient(90deg, rgba(72, 255, 231, 0.609) 0%, rgba(83, 223, 158, 0.719) 100%);
     background-size: auto;
     mix-blend-mode: normal;
   }
-
 
 
   /* RESPONSIVE para Móvil */
@@ -365,9 +363,6 @@ body {
 
 
 
-
-
-
     .pokeCardsName {
       font-size: 10px;
     }
@@ -389,13 +384,15 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  #pokeFooter {
+    height: 60px;
+    margin-top: 30px;
+
+  }
 }
 
- #pokeFooter {
-  width: 380px;
-  height: 50px;   
-} 
-
+ 
   
 
 
