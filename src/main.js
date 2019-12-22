@@ -1,10 +1,8 @@
 import POKEMON from './data/pokemon/pokemon.js'
 
-// Importar funcion POKEMON BY TYPE de data
-import { pokemonByType } from './data.js';
+// Importar funcion POKEMON BY TYPE y POKEMON BY NAME de data
+import { pokemonByType, pokemonByName } from './data.js';
 
-// Importar funcion POKEMON BY NAME de data
-import { pokemonByName } from './data.js';
 
 // Variable del div donde se muestran las cartas
 const pokeBase = document.getElementById('contentOfCards');
@@ -13,6 +11,7 @@ const pokeBase = document.getElementById('contentOfCards');
 function createCards (data) {
   const pokeCards = document.createElement('button');
   pokeCards.setAttribute('class', 'pokeCardsStyle');
+  pokeCards.setAttribute('id', 'pokeButton');
 // console.log(pokeCards);
   const pokePic = document.createElement('img');
   pokePic.setAttribute('class', 'pokeCardsPic');
