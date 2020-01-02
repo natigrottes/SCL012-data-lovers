@@ -34,14 +34,53 @@ function createCards (data) {
   pokeBase.appendChild(pokeCards);
 }
 
+
+const pokeBaseModal = document.getElementById('modal');
+
+// Función para crear Ventana Modal por pokemon
+function createModal (data) {
+  const modalBase = document.createElement('div');
+  modalBase.setAttribute('class', 'modalBaseStyle');
+  modalBase.setAttribute('id', 'modalBaseStyle');
+  // console.log (modalBase);
+  const modal = document.createElement('div');
+  modal.setAttribute('class', 'modalStyle');
+
+  const pokeNameModal = document.createElement('p');
+  pokeNameModal.setAttribute('class', 'pokeModalName');
+  const pokemonNameModal = document.createTextNode(data.name);
+  pokeNameModal.appendChild(pokemonNameModal);
+  modalBase.appendChild(pokeNameModal);
+
+
+  pokeBaseModal.appendChild(modalBase);
+}
+
+// document.getElementById('pokeButton').addEventListener('click', () => {
+  
+
+  
+  
+// )};
+
+
+// function CloseModal() {
+//   document.getElementById('openModal').style.display = 'none';
+// }
+ 
+
+
+
+
 // Recorre todo el ARRAY de la data y se muestra en consola
 for (let i = 0; i < POKEMON.length; i++) {
   createCards(POKEMON[i]);
+  createModal(POKEMON[i]);
 };
 
 // Filtrar por TIPO
 const pokeSelect = document.getElementById('select1');
-console.log(pokeSelect);
+// console.log(pokeSelect);
 pokeSelect.addEventListener('change', filterPokes);
 
 function filterPokes () {
@@ -93,5 +132,7 @@ document.getElementById('pokeHomeBtn2').addEventListener('click', home);
 function home() {
   window.location.reload();
 };
+
+ 
 
 

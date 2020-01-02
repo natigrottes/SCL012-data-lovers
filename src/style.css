@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -38,10 +37,10 @@ body {
     padding-top: 102px;
   } */
 
-  .barraNav {
+  .barraNav, .barraNav2 {
     display: flex;
     justify-content: left; 
-    /* margin-left: 65px; */
+    margin-left: 40px; 
   }
 
   .pokeButtonNav {
@@ -93,7 +92,7 @@ body {
   } 
 
   #pokePic1 {
-    justify-content: center;
+    /* justify-content: center; */
     width: 1400px;
     height: 230px;
     margin-top: 40px; 
@@ -166,10 +165,9 @@ body {
 
   #contentOfCards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    margin: 20px;
+    flex-wrap: wrap; 
     margin-top: 40px;
+    margin-left: 30px;
   }
    
   .pokeCardsStyle {
@@ -210,7 +208,7 @@ body {
   .pokeCardsLine {
     width: 140px;
     margin: 3px;
-    margin-left: 17px;
+    margin-left:12px;
     background: #F49321;
     border: 1px solid #F49321;
   }
@@ -225,8 +223,10 @@ body {
     color: #F49321;
   } 
 
-  select {
+  #select1, #select2, #select3 {
     display: flex;
+    
+   
     width: 278px;
     height: 38px;
     margin: 10px;
@@ -261,6 +261,44 @@ body {
     color: #FFFFFF;
   }
 
+
+
+   .modalBaseStyle {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 0px;
+    background-color: rgba(32, 60, 111, 0.096);;
+    /* visibility: hidden; */
+  } 
+
+  .modal {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 25px;
+    margin: 10% auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .cerrar {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: rgba(255,0,0,0.5);
+    padding: 7px;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+
+  .cerrar:hover {
+    background-color: rgba(255,0,0,0.1);
+  }
+
+
+
   #pokeFooter {
     display: flex;
     justify-content:center;
@@ -271,6 +309,8 @@ body {
     background-size: auto;
     mix-blend-mode: normal;
   }
+  
+  
 
 
   /* RESPONSIVE para Móvil */
@@ -309,8 +349,7 @@ body {
       justify-content: center;
       width: 354px;
       height: 80px;
-      margin-top: 
-      540px;
+      margin-top: 20px;
       margin-left: 7px;
     }
 
@@ -378,10 +417,11 @@ body {
     height: 50px;
   }
 
-  .barraNav2 {
-    display: flex;
-    flex-direction: column;
-  }
+  /* #select2, #select3 {
+    visibility: hidden;
+  } */
+
+
 
   #pokeFooter {
     height: 60px;
